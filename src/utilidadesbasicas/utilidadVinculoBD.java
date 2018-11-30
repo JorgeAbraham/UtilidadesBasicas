@@ -249,6 +249,8 @@ public class utilidadVinculoBD
                 e.printStackTrace();
                 JOptionPane.showMessageDialog(null,"7:"+ e.getMessage());  } finally {    }  
             }
+            
+                
     
     }
     
@@ -917,7 +919,9 @@ public class utilidadVinculoBD
                 try 
                 {
                     try 
-                    (ResultSet rs = s.executeQuery(sql)) {
+                    {
+                        ResultSet rs = s.executeQuery(sql);
+                        
                        
                         int i=0;
                         while (rs.next()) 
@@ -930,7 +934,7 @@ public class utilidadVinculoBD
                     }
                     catch (Exception e)
                     { 
-                        
+                       
                         e.printStackTrace() ;
                         JOptionPane.showMessageDialog(null, e.getMessage());	
                     }
@@ -978,6 +982,9 @@ public class utilidadVinculoBD
                 e.printStackTrace() ;
                 JOptionPane.showMessageDialog(null, e.getMessage());
             } finally {    }  
+        }
+        else{
+            System.err.println("Conection Null");
         }
 
         
