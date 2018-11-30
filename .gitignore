@@ -1,1 +1,8 @@
 /dist/
+/build/
+/build/*
+/build/web/
+/build/web/*
+/web/WEB-INF/
+/nbproject/
+/nbproject/*
