@@ -338,10 +338,15 @@ public class utilidadWeb {
                     }
                 }
             } catch (FileUploadException ex) {
+                
+                ex.printStackTrace();
+                
                 Logger.getLogger(utilidadWeb.class.getName()).log(Level.SEVERE, null, ex);
             }
             
         } else {
+            
+            System.out.println("No hay archivos en la peticion");
              Logger.getLogger("No hay archivos en la peticion");
         }
             

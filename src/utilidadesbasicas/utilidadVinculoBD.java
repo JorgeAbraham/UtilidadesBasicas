@@ -43,7 +43,7 @@ public class utilidadVinculoBD
     
     private String tablaBD;
     private String idBD;
-     private static Connection Con;
+    private static Connection Con;
     
    
     private ArrayList ArregloDeFolios;
@@ -1005,6 +1005,8 @@ public class utilidadVinculoBD
         
     }
     
+   
+    
     
     public DefaultComboBoxModel consultaCombo(String SQL)
     {
@@ -1028,6 +1030,13 @@ public class utilidadVinculoBD
             return str;
     }
     
+    public static String dateToString_guion(Date D)
+    {
+            SimpleDateFormat sdfDestination = new SimpleDateFormat(
+            "yyyy-MM-dd");
+            String str = sdfDestination.format( D );
+            return str;
+    }
   
     
     

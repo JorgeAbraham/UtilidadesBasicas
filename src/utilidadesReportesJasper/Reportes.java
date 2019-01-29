@@ -35,6 +35,14 @@ public class Reportes {
         this.parametros = new HashMap();
     }
     
+    public void setSubreportDir(String valor){
+        parametros.put( "SUBREPORT_DIR",   valor    );
+    }
+    
+    public void setImageReportDir(String valor){
+        parametros.put( "IMAGEREPORTDIR",   valor    );
+    }
+    
     
     public void addParametro(String nombreParametro, String valor){
         parametros.put( nombreParametro,   valor    );
